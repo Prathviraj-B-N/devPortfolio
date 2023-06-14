@@ -1,5 +1,5 @@
 import {
-  mobile,
+  // mobile,
   backend,
   creator,
   web,
@@ -8,7 +8,6 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
@@ -35,8 +34,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "project",
+    title: "Project",
   },
   {
     id: "contact",
