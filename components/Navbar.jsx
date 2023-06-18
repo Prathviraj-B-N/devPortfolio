@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
-import { styles } from "../styles";
+import Image from "next/image";
+
+import { styles }  from "@/styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState(""); // where we are in page
@@ -34,8 +34,8 @@ const Navbar = () => {
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-        <Link
-          to='/'
+        <a
+          href='/'
           className='flex items-center gap-2'
           onClick={() => {
             setActive("");
@@ -43,12 +43,13 @@ const Navbar = () => {
           }}
         >
           {/* <img src={logo} alt='logo' className='w-9 h-9 object-contain' /> */}
-          <img src='src/assets/p.png' alt='logo' className='w-9 h-9 object-contain' />
+          <Image src='/assets/p.png' alt='logo'           height={16}
+          width={16} className='w-9 h-9 object-contain' />
           <p className='text-white tracking-widest text-[18px] font-bold cursor-pointer flex '>
             Prathviraj &nbsp;
             <span className='sm:block hidden'> B N </span>
           </p>
-        </Link>
+        </a>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
@@ -65,9 +66,11 @@ const Navbar = () => {
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <img
-            src={toggle ? close : menu}
+          <Image
+            src={toggle ? "/assets/close.svg" : "/assets/menu.svg"}
             alt='menu'
+            height={16}
+            width={16}
             className='w-[28px] h-[28px] object-contain'
             onClick={() => setToggle((toggle)=>!toggle)}
           />

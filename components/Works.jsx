@@ -2,11 +2,10 @@ import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
-import { styles } from "../styles";
-import { github } from "../assets";
-import { SectionWrapper } from "../hoc";
+import { styles }  from "@/styles";
+import { staggerContainer, fadeIn, textVariant } from "../utils/motion";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import Image from "next/image";
 
 const ProjectCard = ({
   index,
@@ -27,8 +26,10 @@ const ProjectCard = ({
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div className='relative w-full h-[230px]'>
-          <img
+          <Image
             src={image}
+            height={16}
+            width={16}
             alt='project_image'
             className='w-full h-full object-cover rounded-2xl'
           />
@@ -38,9 +39,11 @@ const ProjectCard = ({
               onClick={() => window.open(source_code_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
-              <img
-                src={github}
+              <Image
+                src='/assets/github.png'
                 alt='source code'
+                height={16}
+                width={16}
                 className='w-1/2 h-1/2 object-contain'
               />
             </div>
@@ -64,12 +67,23 @@ const ProjectCard = ({
         </div>
       </Tilt>
     </motion.div>
+
   );
 };
 
 const Works = () => {
   return (
-    <>
+    <motion.section
+    variants={staggerContainer()}
+    initial='hidden'
+    whileInView='show'
+    viewport={{ once: true, amount: 0.25 }}
+    className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
+  >
+    <span className='hash-span' id="project">
+      &nbsp;
+    </span>
+
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
@@ -90,8 +104,8 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </>
+    </motion.section>
   );
 };
 
-export default SectionWrapper(Works, "");
+export default Works;
