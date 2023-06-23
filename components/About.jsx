@@ -1,24 +1,24 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-import { styles } from "@/styles";
 import Image from "next/image";
 
 import { staggerContainer, fadeIn, textVariant } from "../utils/motion";
 
 const About = () => {
+
   return (
     <motion.section
       variants={staggerContainer()}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
+      className={`padding max-w-7xl mx-auto relative z-0`}
     >
       <span className="hash-span" id="about" />
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">Introduction</p>
+        <h2 className="sectionHeadText">Overview.</h2>
       </motion.div>
 
       <motion.p

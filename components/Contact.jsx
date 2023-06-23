@@ -1,8 +1,6 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
-import { styles }  from "@/styles";
 import { staggerContainer, slideIn } from "../utils/motion";
 import { EarthCanvas } from "./canvas";
 
@@ -69,7 +67,7 @@ const Contact = () => {
     initial="hidden"
     whileInView="show"
     viewport={{ once: true, amount: 0.25 }}
-    className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
+    className={`padding max-w-7xl mx-auto relative z-0`}
   >
     <span className="hash-span" id="contact" />
   
@@ -80,8 +78,8 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">Get in touch</p>
+        <h3 className="sectionHeadText">Contact.</h3>
 
         <form
           ref={formRef}

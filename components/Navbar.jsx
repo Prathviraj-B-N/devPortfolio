@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 import Image from "next/image";
-
-import { styles }  from "@/styles";
 import { navLinks } from "../constants";
 
 const Navbar = () => {
@@ -27,9 +25,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
+      className={`paddingX w-full flex items-center py-5 fixed top-0 z-20 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >

@@ -21,8 +21,6 @@
     ],
     "paths": {
       "@/components": ["./components/index.js"],
-      "@/styles": ["./utils/styles.ts"],
-
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "utils/motion.js", "hoc/SectionWrapper.jsx"],
