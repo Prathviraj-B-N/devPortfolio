@@ -28,8 +28,8 @@ const ProjectCard = ({
         <div className='relative w-full h-[230px]'>
           <Image
             src={image}
-            height={16}
-            width={16}
+            height={1024}
+            width={1024}
             alt='project_image'
             className='w-full h-full object-cover rounded-2xl'
           />
@@ -42,8 +42,8 @@ const ProjectCard = ({
               <Image
                 src='/assets/github.png'
                 alt='source code'
-                height={16}
-                width={16}
+                height={1024}
+                width={1024}
                 className='w-1/2 h-1/2 object-contain'
               />
             </div>

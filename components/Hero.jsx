@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { styles }  from "@/styles";
+import TextRunner from "./TextRunner";
 
 const Hero = () => {
   return (
@@ -12,20 +13,18 @@ const Hero = () => {
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
-        <div>
+        <div className="h-full flex flex-col items-start">
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I{`'`}m <span className='text-[#915EFF]'>Prathviraj</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop Full Stack Web applications <br className='sm:block hidden' />
-          </p>
         </div>
       </div>
-
-      <>Hello</>
+      <div className={`${styles.heroHeadText} h-full flex justify-center items-center`}>
+            <TextRunner/>
+      </div>
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
+        <a className="cursor-pointer z-10" href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
               animate={{

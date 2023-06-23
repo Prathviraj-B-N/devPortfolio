@@ -43,8 +43,7 @@ const Navbar = () => {
           }}
         >
           {/* <img src={logo} alt='logo' className='w-9 h-9 object-contain' /> */}
-          <Image src='/assets/p.png' alt='logo'           height={16}
-          width={16} className='w-9 h-9 object-contain' />
+          <Image src='/assets/p.png' alt='logo' height={1024} width={1024} className='w-9 h-9 object-contain' />
           <p className='text-white tracking-widest text-[18px] font-bold cursor-pointer flex '>
             Prathviraj &nbsp;
             <span className='sm:block hidden'> B N </span>
@@ -69,8 +68,8 @@ const Navbar = () => {
           <Image
             src={toggle ? "/assets/close.svg" : "/assets/menu.svg"}
             alt='menu'
-            height={16}
-            width={16}
+            height={1024}
+            width={1024}
             className='w-[28px] h-[28px] object-contain'
             onClick={() => setToggle((toggle)=>!toggle)}
           />

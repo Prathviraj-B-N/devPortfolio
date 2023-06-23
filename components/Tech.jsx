@@ -1,8 +1,8 @@
-import { BallCanvas }  from "./canvas";
 import { technologies } from "../constants";
 import { staggerContainer } from "../utils/motion";
 import { motion } from "framer-motion";
 import { styles } from "@/styles";
+import Image from "next/image";
 
 
 const Tech = () => {
@@ -20,8 +20,8 @@ const Tech = () => {
 
       <div className='flex flex-row flex-wrap justify-center gap-10'>
       {technologies.map((technology) => (
-        <div className='w-28 h-28' key={technology.name}>
-          <BallCanvas icon={technology.icon} />
+        <div className='md:w-18 w-24 md:h-18 h-24 object-contain' key={technology.name}>
+          <Image src={technology.icon} height={1024} width={1024} className="rounded-full bg-slate-200 p-5"/>
         </div>
       ))}
     </div>
