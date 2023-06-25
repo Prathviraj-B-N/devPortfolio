@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
@@ -30,16 +32,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        process.env.VITE_APP_EMAILJS_SERVICE_ID,
-        process.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Prathviraj B N",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "prathviraj.b.n@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
