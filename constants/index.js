@@ -78,7 +78,7 @@ const experiences = [
     points: [
       "My First exposure to the World of Development.",
       "Wrote my first line of code.",
-      "Created Begginer Projects.",
+      "Created Beginner Projects.",
       "Landed my First internship in 4th semester.",
     ],
   },

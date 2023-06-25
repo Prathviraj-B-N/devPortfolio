@@ -27,10 +27,10 @@ const Hero = () => {
           <TextRunner />
         </div>
       </div>
-      <div className="absolute xs:bottom-12 bottom-10 w-full flex flex-col justify-center items-center">
+      <div className="absolute top-[512px] w-full flex flex-col justify-center items-center">
         <a href="https://drive.google.com/file/d/1Fj2b0SzR7ZGK-UDUM6CufzXNG-MrTqC1/view?usp=sharing" target="_blank" className="text-white/70 box sm:text-xl sm:max-w-full p-5 max-w-[128px] cursor-pointer hover:text-white/90 transition-colors">Checkout My <span className="myunderline">Resume</span></a>
       </div>
-      <div className="absolute sm:bottom-10 bottom-1 flex w-screen items-center justify-center text-2xl animate-pulse">&#x2304;</div>
+      <a href="#about" className="relative cursor-pointer top-[632px] flex w-screen items-center justify-center text-6xl animate-pulse">&#x2304;</a>
     </section>
   );
 };

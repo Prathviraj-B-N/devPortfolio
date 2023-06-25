@@ -41,7 +41,7 @@ const Navbar = () => {
           }}
         >
           {/* <img src={logo} alt='logo' className='w-9 h-9 object-contain' /> */}
-          <Image src='/assets/p.png' alt='logo' height={1024} width={1024} className='w-9 h-9 object-contain' />
+          <Image src='/logo.png' alt='logo' height={1024} width={1024} className='w-9 h-9 object-contain' />
           <p className='text-white tracking-widest text-[18px] font-bold cursor-pointer flex '>
             Prathviraj &nbsp;
             <span className='sm:block hidden'> B N </span>
