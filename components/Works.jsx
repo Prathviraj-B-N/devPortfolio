@@ -40,7 +40,7 @@ const ProjectCard = ({
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <Image
-                src='/assets/github.png'
+                src={`${process.env.NEXT_PUBLIC_S3URL}/assets/github.png`}
                 alt='source code'
                 height={1024}
                 width={1024}
