@@ -31,7 +31,7 @@ const ProjectCard = ({
             height={1024}
             width={1024}
             alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
+            className='w-full h-full object-contain rounded-2xl'
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
@@ -95,7 +95,7 @@ const Works = () => {
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
           Following are my latest projects. Each project is briefly described with
-          links to code repositories and live demos in it.
+          links to code repositories in it.
         </motion.p>
       </div>
 

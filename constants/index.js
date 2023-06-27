@@ -130,7 +130,7 @@ const projects = [
         color: "yellow-text-gradient",
       },
     ],
-    image:  `${process.env.NEXT_PUBLIC_S3URL}/assets/iiit.png`,
+    image:  `${process.env.NEXT_PUBLIC_S3URL}/crowdCOntractPic.png`,
     source_code_link: "https://github.com/Prathviraj-B-N/crowdContract",
   },
   {
