@@ -72,7 +72,7 @@ const experiences = [
   {
     title: "BTech",
     company_name: "Sahyadri College of Engg, Mangalore",
-    icon: "/assets/Sayhadrilogo.webp",
+    icon: `${process.env.NEXT_PUBLIC_S3URL}/assets/Sayhadrilogo.webp`,
     iconBg: "#ffffff",
     date: "August 2018 - July 2022",
     points: [
@@ -85,7 +85,7 @@ const experiences = [
   {
     title: "GATE",
     company_name: "All India Rank 1642",
-    icon: "/assets/gate.png",
+    icon: `${process.env.NEXT_PUBLIC_S3URL}/assets/gate.png`,
     iconBg: "#ffffff",
     date: "Jan 2021 - Feb 2022",
     points: [
@@ -96,7 +96,7 @@ const experiences = [
   {
     title: "MTech",
     company_name: "IIIT Bangalore",
-    icon: "/assets/iiit.png",
+    icon: `${process.env.NEXT_PUBLIC_S3URL}/assets/iiit.png`,
     iconBg: "#ffffff",
     date: "August 2022 - present",
     points: [
