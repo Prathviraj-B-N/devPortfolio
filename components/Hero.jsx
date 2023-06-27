@@ -16,7 +16,7 @@ const Hero = () => {
 
         <div className="h-full flex flex-col items-center w-screen">
           <div className="m-5">
-            <Image src="/profile.jpg" alt="Profile Pic" height={500} width={500} className="object-contain rounded-full w-[128px] h-[128px]"/>
+            <Image src="/profile.jpg" alt="Profile Pic" height={500} width={500} className="object-contain rounded-full w-[128px] h-[128px] border-solid border-[1px] border-opacity-50 border-white neon-teal"/>
           </div>
           <div className="">
             <ul className="text-center opacity-50 tracking-widest mb-10">
@@ -30,7 +30,7 @@ const Hero = () => {
       <div className="absolute top-[512px] w-full flex flex-col justify-center items-center">
         <a href="https://drive.google.com/file/d/1Fj2b0SzR7ZGK-UDUM6CufzXNG-MrTqC1/view?usp=sharing" target="_blank" className="text-white/70 box sm:text-xl sm:max-w-full p-5 max-w-[128px] cursor-pointer hover:text-white/90 transition-colors">Checkout My <span className="myunderline">Resume</span></a>
       </div>
-      <a href="#about" className="relative cursor-pointer top-[632px] flex w-screen items-center justify-center text-6xl animate-pulse">&#x2304;</a>
+      <a href="#about" className="relative cursor-pointer top-[632px] flex w-screen items-center justify-center text-6xl animate-bounce">&#x2304;</a>
     </section>
   );
 };

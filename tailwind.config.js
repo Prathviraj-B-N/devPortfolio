@@ -1,4 +1,21 @@
+import  plugin from 'tailwindcss/plugin';
+
 /** @type {import('tailwindcss').Config} */
+const neonPlugin = plugin(({theme,addUtilities}) => {
+  const neonUtils = {};
+  const colors = theme('colors');
+
+  for(const color in colors){
+    if(typeof colors[color] === 'object'){
+      const color1 = colors[color]['500'];
+      const color2 = colors[color]['700'];
+
+      neonUtils[`.neon-${color}`] = { boxShadow: `0 0 15px ${color1}, 0 0 60px ${color2}`,};
+    }
+    addUtilities(neonUtils);
+  }
+});
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -23,5 +40,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [neonPlugin],
 }
