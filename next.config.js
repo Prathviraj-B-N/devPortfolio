@@ -4,8 +4,9 @@ const nextConfig = {
         remotePatterns: [
           {
             protocol: 'https',
-            hostname: 'placehold.co',
+            hostname: 'devportfolio-prathviraj.s3.amazonaws.com',
           },
+          
         ]
     }
 }

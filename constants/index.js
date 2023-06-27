@@ -16,55 +16,55 @@ export const navLinks = [
 const technologies = [
   {
     name: "HTML 5",
-    icon: "/assets/tech/html.png",
+    icon: `${process.env.NEXT_PUBLIC_S3URL}/assets/tech/html.png`,
   },
   {
     name: "CSS 3",
-    icon: "/assets/tech/css.png",
+    icon: `${process.env.NEXT_PUBLIC_S3URL}/assets/tech/css.png`,
   },
   {
     name: "JavaScript",
-    icon: "/assets/tech/javascript.png",
+    icon: `${process.env.NEXT_PUBLIC_S3URL}/assets/tech/javascript.png`,
   },
   {
     name: "TypeScript",
-    icon: "/assets/tech/typescript.png",
+    icon: `${process.env.NEXT_PUBLIC_S3URL}/assets/tech/typescript.png`,
   },
   {
     name: "React JS",
-    icon: "/assets/tech/reactjs.png",
+    icon: `${process.env.NEXT_PUBLIC_S3URL}/assets/tech/reactjs.png`,
   },
   {
     name: "Next JS",
-    icon: "/assets/nextjs.svg"
+    icon: `${process.env.NEXT_PUBLIC_S3URL}/assets/nextjs.svg`
   },
   {
     name: "Tailwind CSS",
-    icon: "/assets/tech/tailwind.png",
+    icon: `${process.env.NEXT_PUBLIC_S3URL}/assets/tech/tailwind.png`,
   },
   {
     name: "Node JS",
-    icon: "/assets/tech/nodejs.png",
+    icon: `${process.env.NEXT_PUBLIC_S3URL}/assets/tech/nodejs.png`,
   },
   {
     name: "MongoDB",
-    icon: "/assets/tech/mongodb.png",
+    icon: `${process.env.NEXT_PUBLIC_S3URL}/assets/tech/mongodb.png`,
   },
   {
     name: "git",
-    icon: "/assets/tech/git.png",
+    icon: `${process.env.NEXT_PUBLIC_S3URL}/assets/tech/git.png`,
   },
   {
     name: "docker",
-    icon: "/assets/tech/docker.png",
+    icon: `${process.env.NEXT_PUBLIC_S3URL}/assets/tech/docker.png`,
   },
   {
     name: "Java",
-    icon: "/assets/java.png",
+    icon: `${process.env.NEXT_PUBLIC_S3URL}/assets/java.png`,
   },
   {
     name: "MySQL",
-    icon: "/assets/mysql.png",
+    icon: `${process.env.NEXT_PUBLIC_S3URL}/assets/mysql.png`,
   },
 ];
 
@@ -130,7 +130,7 @@ const projects = [
         color: "yellow-text-gradient",
       },
     ],
-    image: "/assets/iiit.png",
+    image:  `${process.env.NEXT_PUBLIC_S3URL}/assets/iiit.png`,
     source_code_link: "https://github.com/Prathviraj-B-N/crowdContract",
   },
   {
@@ -155,7 +155,7 @@ const projects = [
         color: "yellow-text-gradient",
       },
     ],
-    image: "/assets/iiit.png",
+    image:  `${process.env.NEXT_PUBLIC_S3URL}/assets/iiit.png`,
     source_code_link: "https://github.com/orgs/Healthcare-Application-Development/repositories",
   },
   {
@@ -172,7 +172,7 @@ const projects = [
         color: "green-text-gradient",
       }
     ],
-    image: "/assets/iiit.png",
+    image:  `${process.env.NEXT_PUBLIC_S3URL}/assets/iiit.png`,
     source_code_link: "https://github.com/Prathviraj-B-N/XDM-VIEWS",
   },
 ];

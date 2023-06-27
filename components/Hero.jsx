@@ -16,7 +16,7 @@ const Hero = () => {
 
         <div className="h-full flex flex-col items-center w-screen">
           <div className="m-5">
-            <Image src="/profile.jpg" alt="Profile Pic" height={500} width={500} className="object-contain rounded-full w-[128px] h-[128px] border-solid border-[1px] border-opacity-50 border-white neon-teal"/>
+            <Image src={`${process.env.NEXT_PUBLIC_S3URL}/profile.jpg`} alt="Profile Pic" height={500} width={500} className="object-contain rounded-full w-[128px] h-[128px] border-solid border-[1px] border-opacity-50 border-white neon-teal" blurDataURL="/loading.gif" placeholder="blur" priority/>
           </div>
           <div className="">
             <ul className="text-center opacity-50 tracking-widest mb-10">
