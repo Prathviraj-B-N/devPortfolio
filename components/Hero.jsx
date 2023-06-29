@@ -1,6 +1,4 @@
-"use client";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import TextRunner from "./TextRunner";
 
 const Hero = () => {

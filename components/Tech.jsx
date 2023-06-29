@@ -1,18 +1,9 @@
-"use client";
-
 import { technologies } from "../constants";
-import { staggerContainer } from "../utils/motion";
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 const Tech = () => {
   return (
-    <motion.section
-      variants={staggerContainer()}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
-      className={`padding max-w-7xl mx-auto relative z-0`}
+    <section className={`padding max-w-7xl mx-auto relative z-0`}
     >
     <span className='hash-span' id="skill">
       {``}
@@ -26,7 +17,7 @@ const Tech = () => {
         </div>
       ))}
     </div>
-    </motion.section>
+    </section>
   );
 };
 
