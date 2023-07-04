@@ -177,4 +177,32 @@ const projects = [
   },
 ];
 
-export { technologies, experiences, projects };
+const blogs = [
+  {
+    name: "DevOps Introduction",
+    description:
+      "Short Notes and introduction to DevOps",
+    tags: [
+      {
+        name: "DevOps",
+        color: "blue-text-gradient",
+      },
+      // {
+      //   name: "SpringBoot",
+      //   color: "green-text-gradient",
+      // },
+      // {
+      //   name: "MySQL",
+      //   color: "pink-text-gradient",
+      // },
+      // {
+      //   name: "Docker",
+      //   color: "yellow-text-gradient",
+      // },
+    ],
+    blogLink: "https://carnation-hen-f89.notion.site/DevOps-6b32138862c9494d9040c4fe008e9a24?pvs=4",
+  },
+  
+];
+
+export { technologies, experiences, projects, blogs };

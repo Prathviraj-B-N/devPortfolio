@@ -1,5 +1,5 @@
 import { StarsCanvas } from "../components/canvas";
-import {Navbar,Hero,About,Tech,Works,Experience,Contact,Footer} from "@/components";
+import {Navbar,Hero,About,Tech,Works,Experience,Blogs,Contact,Footer} from "@/components";
 import { datadogLogs } from '@datadog/browser-logs';
 
 
@@ -19,6 +19,7 @@ export default function Home() {
         <About />
         <Tech />
         <Works />
+        <Blogs/>
         <Experience />
         <div className="relative z-0">
           <Contact />
