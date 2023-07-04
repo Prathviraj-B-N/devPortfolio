@@ -53,7 +53,7 @@ const Blogs = () => {
     viewport={{ once: true, amount: 0.25 }}
     className={`padding max-w-7xl mx-auto relative z-0`}
   >
-    <span className='hash-span' id="project">
+    <span className='hash-span' id="blog">
       &nbsp;
     </span>
 
