@@ -207,6 +207,30 @@ const blogs = [
     ],
     blogLink: "https://carnation-hen-f89.notion.site/DevOps-6b32138862c9494d9040c4fe008e9a24?pvs=4",
   },
+  {
+    name: "Simple DevOps Walkthrough",
+    description:
+      "A Minimal calculator project to understand and implement DevOps principles and Automation tools",
+    tags: [
+      {
+        name: "DevOps",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Ansible",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Jenkins",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Docker",
+        color: "yellow-text-gradient",
+      },
+    ],
+    blogLink: "https://carnation-hen-f89.notion.site/Calculator-DevOps-c1aa8b3294a84346af148b11e9ade2cb?pvs=4",
+  },
   
 ];
 
