@@ -38,6 +38,7 @@ const BlogCard = ({
             </p>
           ))}
         </div>
+        <p className="w-full text-right">Read more ...</p>
       </Tilt>
     </motion.div>
 
