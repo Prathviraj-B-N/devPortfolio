@@ -184,6 +184,22 @@ const projects = [
 
 const blogs = [
   {
+    name: "Kubernetes In Short",
+    description:
+      "My Short Notes on Kubernetes",
+    tags: [
+      {
+        name: "DevOps",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Kubernetes",
+        color: "green-text-gradient",
+      },
+    ],
+    blogLink: "https://carnation-hen-f89.notion.site/Kubernetes-In-Short-a63a2489414d40719c6615566740b5b8?pvs=4",
+  },
+  {
     name: "DevOps Introduction",
     description:
       "Short Notes and introduction to DevOps",
